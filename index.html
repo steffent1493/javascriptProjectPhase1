@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html>
+    <body>
+    
+
+    <div class="banner" id="banner">
+        <img src="banner3.png">
+    </div>
+
+    <div class="sidenav">
+
+        <h2>Recipe Filters</h2>
+
+        <label for="diets">Diet:</label>
+
+        <select name="diets" id="diets">
+            <option value="">-----</option>
+            <option value="Gluten Free">Gluten Free</option>
+            <option value="Ketogenic">Ketogenic</option>
+            <option value="Vegetarian">Vegetarian</option>
+            <option value="Lacto-Vegetarian">Lacto-Vegetarian</option>
+            <option value="Ovo-Vegetarian">Ovo-Vegetarian</option>
+            <option value="Vegan">Vegan</option>
+            <option value="Pescetarian">Pescetarian</option>
+            <option value="Paleo">Paleo</option>
+            <option value="Primal">Primal</option>
+            <option value="Whole30">Whole30</option>
+         </select>
+         
+         <label for="intolerances">Intolerances:</label>
+
+         <select name="intolerances" id="intolerances">
+            <option value="">-----</option>
+            <option value="Dairy">Dairy</option>
+            <option value="Egg">Egg</option>
+            <option value="Gluten">Gluten</option>
+            <option value="Grain">Grain</option>
+            <option value="Peanut">Peanut</option>
+            <option value="Seafood">Seafood</option>
+            <option value="Sesame">Sesame</option>
+            <option value="Shellfish">Shellfish</option>
+            <option value="Soy">Soy</option>
+            <option value="Sulfite">Sulfite</option>
+         </select>
+
+         <label for="cuisine">Cuisine:</label>
+
+            <select name="cuisine" id="cuisine">
+                <option value="">-----</option>
+               <option value="African">African</option>
+               <option value="American">American</option>
+               <option value="British">British</option>
+               <option value="Cajun">Cajun</option>
+               <option value="Caribbean">Caribbean</option>
+               <option value="Chinese">Chinese</option>
+               <option value="Eastern European">Eastern European</option>
+               <option value="French">French</option>
+               <option value="German">German</option>
+               <option value="Indian">Indian</option>
+               <option value="Greek">Greek</option>
+               <option value="Irish">Irish</option>
+               <option value="Italian">Italian</option>
+               <option value="Japanese">Japanese</option>
+               <option value="Jewish">Jewish</option>
+               <option value="Korean">Korean</option>
+               <option value="Latin American">Latin American</option>
+               <option value="Mediterranean">Mediterranean</option>
+               <option value="Mexican">Mexican</option>
+               <option value="Middle Eastern">Middle Eastern</option>
+               <option value="Nordic">Nordic</option>
+               <option value="Southern">Southern</option>
+               <option value="Spanish">Spanish</option>
+               <option value="Thai">Thai</option>
+               <option value="Vietnamese">Vietnamese</option>
+            </select>
+            
+            <label for="number">Number:</label>
+
+            <select name="number" id="number">
+                <option value="5">5</option>
+                <option value="10">10</option>
+                <option value="25">25</option>
+                <option value="50">50</option>
+                <option value="100">100</option>
+             </select>
+          
+
+         <button type="button" id="filter">Filter</button>
+    </div>
+
+    <div class="selectednav" id="selectednav">
+<!-- modal button -->
+        <button type="button" id="shoppinglist-btn">Shopping List</button>
+    </div>
+<!-- modal and close -->
+    <div id="shopping-list-modal" class="shopping-list-modal">
+        <div class="shopping-list-content" id="shopping-list-content">
+            <button onclick="window.print()" id="print-btn">Print</button>
+            <button id="close-btn">Close</button>  
+        </div>
+            
+        </div>
+        
+            
+        
+    </div>
+
+    <div class="main">
+    </div>
+
+    <div class="recipe-container" id="recipe-container">   
+    </div>
+
+
+
+    <script src="index.js"></script>
+    <link rel="stylesheet" href="style.css">
+</html>
