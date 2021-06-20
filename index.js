@@ -94,7 +94,7 @@ function renderDietData(diet) {
             <div class='card' id='${diet.id}'>
                 <h2> ${diet.title} </h2>
                 <img src='${diet.image}'>
-                <
+                
             </div>
             ` 
         recipeContainer.appendChild(dietCard)
