@@ -94,15 +94,17 @@ background-color: lightblue;
 border-color:#111;
 }
 
-.selectednav button {
+/* .selectednav button {
   margin: 0;
   position: absolute;
   top: 10%;
   left: 50%;
   -ms-transform: translate(-50%, -50%);
   transform: translate(-50%, -50%);
+} */
+.selectednav-btns {
+  text-align: center;
 }
-
 .img {
   top: 50%;
   left: 50%;

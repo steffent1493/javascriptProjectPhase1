@@ -57,7 +57,9 @@ let numberChoice = n.value
 
 let cuisineChoice = c.value
 
-filterButton = document.getElementById('filter');
+let clearShoppingList = document.getElementById('clear-shopping-list-btn')
+
+let filterButton = document.getElementById('filter');
 
 //event listeners:
 
@@ -80,6 +82,8 @@ c.addEventListener("change", function () {
 filterButton.addEventListener('click', function () {
     getFilterRecipe()
 })
+
+
 
 //functions:
 
@@ -138,7 +142,11 @@ function getDietRecipe() {
             <p> -${dietObj.title} <p>
         </p>
         `
-                
+        clearShoppingList.addEventListener('click', function () {
+            recipeSelectedList.innerHTML = ""
+            shoppingListContent.innerHTML = ""
+            
+        })       
         let ingredients = "";
                 dietObj.extendedIngredients.forEach(ingredient => {
                     ingredients += `${ingredient.measures.metric.amount} ${ingredient.measures.metric.unitShort}  ${ingredient.name}, `
@@ -152,5 +160,5 @@ function getDietRecipe() {
                 shoppingListContentBox.appendChild(shoppingListContent)
                 
             })
-     
+            
     }
